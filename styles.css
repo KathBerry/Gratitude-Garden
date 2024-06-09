@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie&family=Mali&family=Super+Creamy&display=swap');
+
+body {
+    font-family: 'Mali', sans-serif;
+    background-color: #f3e5f5; /* pastel purple background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #e1bee7; /* lavender background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 3px solid #ce93d8; /* pastel purple border */
+    max-width: 600px;
+    width: 80%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-family: 'Elsie', cursive;
+    color: #ba68c8; /* pastel purple */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+h2 {
+    font-family: 'Elsie', cursive;
+    color: #ba68c8; /* pastel purple */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+#entryForm {
+    margin-bottom: 20px;
+}
+
+#entryText {
+    font-family: 'Mali', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    width: calc(100% - 22px);
+    height: 100px;
+    border: 2px dashed #b39ddb; /* pastel blue dashed border */
+    border-radius: 10px;
+    resize: none;
+    background-color: #e8eaf6; /* pastel blue background */
+}
+
+#entries {
+    margin-top: 20px;
+}
+
+.entry {
+    font-family: 'Super Creamy', cursive;
+    font-size: 1.2em;
+    color: #ab47bc; /* pastel pink */
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fce4ec; /* pastel pink background */
+    border-radius: 10px;
+    border: 2px dashed #f8bbd0; /* pastel pink dashed border */
+    animation: fadeIn 2s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.entry-date {
+    font-family: 'Elsie', cursive;
+    font-size: 0.8em;
+    color: #ba68c8; /* pastel purple */
+}
+
+button {
+    font-family: 'Mali', sans-serif;
+    background-color: #ce93d8; /* pastel purple */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    animation: slideIn 1.5s ease-in-out;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #ba68c8; /* darker pastel purple on hover */
+}
+
+footer {
+    margin-top: 20px;
+    font-family: 'Mali', sans-serif;
+    color: #ba68c8; /* pastel purple */
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
